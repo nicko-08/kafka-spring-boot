@@ -21,9 +21,9 @@ public class MessageController {
         return ResponseEntity.ok("Message sent to the topic");
     }
 
-    @PostMapping("/publish")
-    public ResponseEntity<String> publishMessage(@RequestBody String message) {
-        kafkaProducer.sendMessage(message);
-        return ResponseEntity.ok("Message sent to the topic");
-    }
+//    @PostMapping("/publish")
+//    public ResponseEntity<String> publishMessage(@RequestBody String message) {
+//        kafkaProducer.sendMessage(message);
+//        return ResponseEntity.ok("Message sent to the topic");
+//    }
 }
